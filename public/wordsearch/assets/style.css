@@ -1,0 +1,46 @@
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#0b0d10;color:#eaeef2}
+a{color:#7cc4ff;text-decoration:none}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#12161c;border-bottom:1px solid #1f2630}
+.topbar h1{margin:0;font-size:18px}
+.container{max-width:960px;margin:20px auto;padding:0 12px;display:grid;gap:16px}
+.card{background:#131922;border:1px solid #213043;border-radius:14px;padding:16px}
+.card h2{margin:0 0 8px 0;font-size:18px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid2 .span2{grid-column:span 2}
+.row{display:flex;gap:8px;align-items:center}
+.row.between{justify-content:space-between}
+.btn{background:#1e9bff;border:0;color:#001225;padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:600}
+.btn.small{font-size:12px;padding:4px 8px}
+.btn.danger{background:#ff5c7a;color:#2a0009}
+label{display:block}
+input,textarea,select{width:100%;background:#0f131a;color:#eaeef2;border:1px solid #28384d;border-radius:8px;padding:8px}
+.list{list-style:none;padding:0;margin:0}
+.list li{padding:6px 0;border-bottom:1px dashed #2a3a50}
+.table{display:grid;grid-template-columns:60px 1fr 110px 160px 220px;border:1px solid #22344b;border-radius:12px}
+.table .t-head,.table .t-row{display:contents}
+.table > div > div{padding:10px;border-bottom:1px solid #1e2b3d}
+.table .t-head > div{background:#101621;font-weight:700}
+.max400{max-width:420px;margin:0 auto}
+.error{color:#ff6b6b}
+.success{color:#69f0ae}
+
+.ws-grid{display:inline-grid;grid-template-columns:repeat(var(--w), 28px);gap:2px;--w:12;margin-top:12px}
+.ws-grid .cell{width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:#0f1520;border:1px solid #24344a;border-radius:4px;font-weight:700;user-select:none}
+.ws-grid .cell.sel{outline:2px solid #58a6ff;outline-offset:-2px}
+.ws-grid .cell.found{background:#1b4b2a;border-color:#2d7a3f}
+.ws-grid .cell.hint{background:#312239;border-color:#7b3fa3}
+.words{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+.word{padding:4px 8px;border:1px solid #2e3f56;border-radius:999px;background:#0e131d}
+.word.found{background:#1b4b2a;border-color:#2d7a3f;text-decoration:line-through}
+
+.card.info {
+  background: #f8f9fb;
+  border: 1px solid #d0d7e2;
+  color: #222;
+}
+.card.info h2 {
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+}
+

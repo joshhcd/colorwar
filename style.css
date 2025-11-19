@@ -1,0 +1,72 @@
+
+:root{
+  --bg:#0f1115;
+  --card:#151826;
+  --muted:#a3a9b7;
+  --text:#e6e9ef;
+  --accent:#e80a4d;
+  --soft:#f3f4f5;
+  --warn:#feda15;
+  --navy:#38405f;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:system-ui,Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background:linear-gradient(180deg, #0c0f14, #0b0e12);
+  color:var(--text);
+}
+a{ color:var(--soft); text-decoration:none }
+a:hover{ text-decoration:underline }
+
+.container{ max-width:1100px; margin:0 auto; padding:24px }
+
+.topbar{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 0;
+}
+.brand{ font-size:24px; font-weight:700; letter-spacing:.3px }
+.brand span{ color:var(--accent) }
+
+.grid{
+  display:grid; gap:18px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+.card{
+  background:linear-gradient(180deg, #171b29, #141829);
+  border:1px solid #23283b;
+  border-radius:16px;
+  padding:18px; box-shadow:0 10px 22px rgba(0,0,0,.25);
+}
+
+.team-card h3{ margin:0 0 8px 0; font-size:20px }
+.team-card .meta{ color:var(--muted); font-size:12px; margin-bottom:8px }
+.team-badge{ display:inline-block; padding:4px 10px; border-radius:999px; font-weight:600; border:1px solid #222 }
+.team-score{ font-size:36px; font-weight:800; margin:8px 0 0 }
+
+.board h2{ margin:20px 0 10px 0 }
+
+table{ width:100%; border-collapse:collapse; font-size:14px }
+th, td{ padding:10px 8px; border-bottom:1px solid #243049 }
+th{ text-align:left; color:#c4c9d4; font-weight:600 }
+tbody tr:hover{ background:#121622 }
+
+footer{ margin:40px 0 0; color:#79839a; font-size:12px; text-align:center }
+
+.button{
+  background:var(--accent); color:#fff; padding:10px 14px;
+  border:none; border-radius:10px; font-weight:700; cursor:pointer
+}
+.button.secondary{ background:#262b3e }
+.toolbar{ display:flex; gap:10px; align-items:center }
+
+.notice{
+  padding:12px 14px; background:#12201a; border:1px solid #26673f;
+  color:#aee5bf; border-radius:10px; margin:10px 0
+}
+
+.warn{
+  padding:12px 14px; background:#2a210d; border:1px solid #896a19;
+  color:#ffd36f; border-radius:10px; margin:10px 0
+}
