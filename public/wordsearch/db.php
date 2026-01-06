@@ -22,7 +22,7 @@ if ($needInit) {
         );
     ");
     $stmt = $pdo->prepare("INSERT INTO settings (id, admin_user, admin_pass_hash) VALUES (1, :u, :h)");
-    $stmt->execute([':u'=>'joshh@culinarydepot.com', ':h'=>password_hash('rlaJrAB8bX^p0kwP&NK$ei', PASSWORD_DEFAULT)]);
+    $stmt->execute([':u'=>'admin', ':h'=>password_hash('rlaasdasdasasdadssadei', PASSWORD_DEFAULT)]);
 
     $pdo->exec("
         CREATE TABLE IF NOT EXISTS users (
